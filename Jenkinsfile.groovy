@@ -17,13 +17,17 @@ pipeline{
             }
              post {
                 success{
-                    mail to: "natusvincere45@gmail.com",
+                    emailext attachLog: true,
+                    compressLog: true,
+                    to: "natusvincere45@gmail.com",
                     subject: "Unit and Integration Test Alert",
                     body: "Status: The Unit and Integration Testing is completed successfully."
                     
                 }
                 failure{
-                    mail to: "natusvincere45@gmail.com",
+                    emailext attachLog: true,
+                    compressLog: true,
+                    to: "natusvincere45@gmail.com",
                     subject: "Unit and Integration Test Alert",
                     body: "Status: The Unit and Integration Testing has failed."
                 }
