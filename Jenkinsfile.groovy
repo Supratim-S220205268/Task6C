@@ -24,8 +24,7 @@ pipeline{
                     
                 }
                 failure{
-                    emailext attachLog: true,
-                    to: "natusvincere45@gmail.com",
+                    emailext to: "natusvincere45@gmail.com",
                     subject: "Unit and Integration Test Alert",
                     body: "Status: The Unit and Integration Testing has failed."
                 }
