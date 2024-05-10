@@ -46,12 +46,14 @@ pipeline{
             }
             post {
                 success{
-                    mail to: "natusvincere45@gmail.com",
+                    emailext attachLog: true,
+                    to: "natusvincere45@gmail.com",
                     subject: "Security Scan Alert",
                     body: "Status: The Security Scan has been completed successfully"
                 }
                 failure{
-                    mail to: "natusvincere45@gmail.com",
+                    emailext attachLog: true,
+                    to: "natusvincere45@gmail.com",
                     subject: "Security Scan Alert",
                     body: "Status: The Security Scan has failed."
                 }
