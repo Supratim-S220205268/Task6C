@@ -17,13 +17,13 @@ pipeline{
             }
              post {
                 success{
-                    mail to: "s220205268@deakin.edu.au",
+                    mail to: "natusvincere45@gmail.com",
                     subject: "Unit and Integration Test Alert",
                     body: "Status: The Unit and Integration Testing is completed successfully."
                     
                 }
                 failure{
-                    mail to: "s2202052668@deakin.edu.au",
+                    mail to: "natusvincere45@gmail.com",
                     subject: "Unit and Integration Test Alert",
                     body: "Status: The Unit and Integration Testing has failed."
                 }
@@ -42,12 +42,12 @@ pipeline{
             }
             post {
                 success{
-                    mail to: "s2202052668@deakin.edu.au",
+                    mail to: "natusvincere45@gmail.com",
                     subject: "Security Scan Alert",
                     body: "Status: The Security Scan has been completed successfully"
                 }
                 failure{
-                    mail to: "s2202052668@deakin.edu.au",
+                    mail to: "natusvincere45@gmail.com",
                     subject: "Security Scan Alert",
                     body: "Status: The Security Scan has failed."
                 }
@@ -66,13 +66,13 @@ pipeline{
             }
             post {
                 success{
-                    mail to: "s220205268@deakin.edu.au",
+                    mail to: "natusvincere45@gmail.com",
                     subject: "Staging - Integration Test Alert",
                     body: "Status: The Integration Testing on Staging environment is completed successfully."
                     
                 }
                 failure{
-                    mail to: "s2202052668@deakin.edu.au",
+                    mail to: "natusvincere45@gmail.com",
                     subject: "Staging - Integration Test Alert",
                     body: "Status: The Integration Testing on Staging environment has failed."
                 }
